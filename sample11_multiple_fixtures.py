@@ -8,7 +8,6 @@ def func_1():
 def func_2():
     return 2
 
-
 @pytest.fixture()
 def func_3():
     return 3
