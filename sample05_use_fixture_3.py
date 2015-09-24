@@ -11,25 +11,16 @@ def test_1():
     print ("test1")
     print f
 
-def test_2():
+def test_2(f):
     print ("test2")
     print f
 
-class TestClass_1:
+class TestClass:
     def test_3(self):
         print ("test3")
         print f
 
-    def test_4(self):
+    def test_4(self,f):
         print ("test4")
-        print f
-
-class TestClass_2:
-    def test_5(self):
-        print ("test5")
-        print f
-
-    def test_6(self):
-        print ("test6")
         print f
 
