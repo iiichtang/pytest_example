@@ -22,16 +22,16 @@ def f():
     class_list.append(data2)
     return class_list
 
-@pytest.fixture()
-def f2():
-    data1 = Class1()
-    return data1
-
 
 def test_data(f):
+    print
     print f[0].get_data()
     print f[1].get_data()
+
+def test_data2(f):
+    assert f[0].get_data() == 1111
+    assert f[1].get_data() == "string"
+
+def test_data3(f):
     assert f[0].get_data() == f[1].get_data()
 
-def test_data2(f2):
-    print f2.get_data()
